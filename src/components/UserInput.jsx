@@ -8,14 +8,14 @@ export default function UserInput({ inputValues, onChange }) {
           id="initialInvestment"
           label="Initial Investment"
           type="number"
-          value={inputValues.initialInvestment}
+          defaultValue={inputValues.initialInvestment}
           onChange={onChange}
         />
         <InputGroup
           id="annualInvestment"
           label="Annual Interest"
           type="number"
-          value={inputValues.annualInvestment}
+          defaultValue={inputValues.annualInvestment}
           onChange={onChange}
         />
       </div>
@@ -24,14 +24,14 @@ export default function UserInput({ inputValues, onChange }) {
           id="expectedReturn"
           label="Expected Return"
           type="number"
-          value={inputValues.expectedReturn}
+          defaultValue={inputValues.expectedReturn}
           onChange={onChange}
         />
         <InputGroup
           id="duration"
           label="Expiration"
           type="number"
-          value={inputValues.duration}
+          defaultValue={inputValues.duration}
           onChange={onChange}
         />
       </div>

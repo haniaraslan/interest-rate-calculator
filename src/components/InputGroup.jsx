@@ -1,14 +1,10 @@
-export default function InputGroup({ id, label, type, value, onChange }) {
-  console.log(value);
+export default function InputGroup(props) {
+  const { label, ...inputProps } = props;
+
   return (
     <div>
       <label>{label}</label>
-      <input
-        id={id}
-        type={type}
-        defaultValue={value}
-        onChange={onChange}
-      ></input>
+      <input {...inputProps}></input>
     </div>
   );
 }
