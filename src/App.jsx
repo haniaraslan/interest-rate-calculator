@@ -32,7 +32,11 @@ function App() {
         inputValues={inputValues}
         onChange={handleOnValueChange}
       ></UserInput>
-      <ResultTable result={resultValues}></ResultTable>
+      {resultValues.length > 0 ? (
+        <ResultTable result={resultValues}></ResultTable>
+      ) : (
+        <p className="center">Please enter valid Data!</p>
+      )}
     </div>
   );
 }
